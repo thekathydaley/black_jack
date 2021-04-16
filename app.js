@@ -87,7 +87,7 @@ function startBlackJack()
 {
     document.getElementById('btnStart').value = 'Restart';
     document.getElementById('status').style.display="none";
-    current player = 0;
+    currentPlayer = 0;
     createDeck();
     shuffle();
     createPlayers(2);
@@ -117,5 +117,32 @@ function dealHands()
 function addCard( card, player)
 {
     var hand = document.getElementById('hand_' + player);
-    hand.appendChild()
+    hand.appendChild(getCardUI(card));
 }
+function getCardUI(card)
+{
+    var el = document.createElement('div');
+    el.className = 'card';
+    el.innerHTML = card.Suit + ' '+ card.Value;
+    return el;
+}
+// HIT ME FUNCTION - POPs card out of array and adds to player's cards
+var currentPlayer = 0; 
+function hitMe()
+{
+    var card = deck-pop();
+    players[currentPlayer].Hand.push(card);
+    addCard(card, currentPlayer);
+    updatePoints();
+    check();
+}
+//function to check if cards exceed 21
+function check()
+{
+    if (players[currentPlayer].Points > 21)
+    {
+        document.getElementById('status').innerHTML= 'Player: ' + players[currentPlayer].ID + ' LOST';
+    }
+}
+
+// HOLD/STAY FUNCTION
