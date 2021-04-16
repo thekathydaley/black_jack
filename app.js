@@ -17,7 +17,7 @@ function createDeck()
 {
     for(var x = 0; x < suits.length; x++)
     {
-        //change the letters to be considered numbers in the array
+        //change the letters to be considered numbers in the array and assign facecard values
         var weight = parseInt(values[i]);
                 if (values[i] == "J" || values[i] == "Q" || values[i] == "K")
                     weight = 10;
@@ -96,3 +96,26 @@ function startBlackJack()
     document.getElementById('player_' + currentPlayer).classList.add('active');
 }
 // Dealing the cards
+// one card to each player, pop will help select the card from the array above
+//then the push will assign one card to each player
+function dealHands()
+{
+    for (var i = 0; i < 2; i++)
+    {
+        for (var x = 0; x < players.length; x++)
+    {
+        var card = desk.pop();
+        players[x].Hand.push(card);
+        addCard(card, x);
+        updatePoints();
+    }
+    }
+    updateDeck();
+}
+// functions to put the card in the player's hand - research harder on this  
+// -  the functions are confusing
+function addCard( card, player)
+{
+    var hand = document.getElementById('hand_' + player);
+    hand.appendChild()
+}
