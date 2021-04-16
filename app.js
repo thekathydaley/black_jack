@@ -81,3 +81,18 @@ function createPlayersUI()
         document.getElementById('players').appendChild(div_player);
     }
 }
+
+// Beginning the game
+function startBlackJack()
+{
+    document.getElementById('btnStart').value = 'Restart';
+    document.getElementById('status').style.display="none";
+    current player = 0;
+    createDeck();
+    shuffle();
+    createPlayers(2);
+    createPlayersUI();
+    dealHands();
+    document.getElementById('player_' + currentPlayer).classList.add('active');
+}
+// Dealing the cards
