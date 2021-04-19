@@ -2,3 +2,72 @@
     padding:0%;
     margin:0%;
 }
+.game
+{
+    width: 720px;
+    border: solid 1px rgb(19, 17, 17);
+    margin: 0 auto;
+    background: #e780df;
+    border: solid 10px;
+    text-align:center;
+    min-height:430px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+.btn{
+    border: solid black 2pt;
+    padding: 10px 30px;
+    border-radius:10px;
+    cursor: pointer;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 14pt;
+}
+.btn:hover{
+    background:rgb(207, 181, 201);
+}
+.game h3
+{
+padding: 10px;
+background:black;
+color:white;
+}
+
+.game .game-body
+{
+padding: 20px;
+}
+.game .game-options
+{
+text-align:center;
+}
+.game .card{
+    width: 50px;
+    height: 80px;
+    padding: 10px;
+    border: solid 1px #808080;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 10pt;
+    text-align: center;
+    margin: 3px;
+    border:solid 3px;
+}
+.game .status
+{
+    display: inline-block;
+background: gold;
+border: solid 5px white;
+border-radius: 10px;
+padding: 5px 20px;
+margin: 0 auto;
+margin-top: 10px;
+display:none;
+}
+
+
+.players{
+       width: 500px;
+margin: 0 auto;
+margin-top: 20px;
+text-align: center;
+}
