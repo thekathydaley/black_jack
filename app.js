@@ -173,4 +173,25 @@ function end()
         score = players[i].Points;
     }
     document.getElementById('status').innerHTML = "Player " + players[winner].ID + " wins!"
+    document.getElementById("status").style.display = "inline-block";
 }
+function check()
+{
+    if (players[currentPlayer].Points > 21)
+    {
+        document.getElementById('status').innerHTML = 'Player: ' + players[currentPlayer].ID + ' LOST';
+        document.getElementById('status').style.display = "inline-block";
+        end();
+    }
+}
+
+function updateDeck()
+{
+    document.getElementById('deckcount').innerHTML = deck.length;
+}
+
+window.addEventListener('load', function(){
+    createDeck();
+    shuffle();
+    createPlayers(1);
+});
