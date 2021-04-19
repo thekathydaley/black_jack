@@ -146,3 +146,31 @@ function check()
 }
 
 // HOLD/STAY FUNCTION
+
+function stay()
+    {
+        if (currentPlayer != players.length-1){
+            document.getElementById('player_' + currentPlayer).classList.remove('active');
+            currentPlayer += 1;
+            document.getElementById('player_' + currentPlayer).classList.add('active');
+    }
+        else {
+            end();
+        }
+    }
+
+function end()
+{
+    var winner = -1;
+    var score = 0;
+
+    for (var i = 0; i < players.length; i++)
+    {
+        if (players[i].Points > score && players[i].Points < 22)
+        {
+            winner = i;
+        }
+        score = players[i].Points;
+    }
+    document.getElementById('status').innerHTML = "Player " + players[winner].ID + " wins!"
+}
