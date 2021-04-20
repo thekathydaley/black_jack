@@ -48,7 +48,7 @@ function createPlayers(num) {
         players.push(player);
     }
 }
-
+// CREATING WHAT THE PLAYERS CAN DO
 function createPlayersUI() {
     document.getElementById('players').innerHTML = '';
     for (var i = 0; i < players.length; i++) {
