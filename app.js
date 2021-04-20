@@ -174,7 +174,7 @@ function stay() {
     }
 }
 
-
+// Scoring and winners
 function end() {
     var winner = -1;
     var score = 0;
@@ -188,7 +188,7 @@ function end() {
     }
 
     document.getElementById('status').innerHTML = 'Winner: Player ' + players[winner].ID;
-    document.getElementById("status").style.display = "inline-block";
+    document.getElementById('status').style.display = "inline-block";
 }
 
 function check() {

@@ -16,7 +16,7 @@
     font-size: 25pt;
 }
 .btn{
-    border: solid black 2pt;
+    border: solid white 2pt;
     padding: 10px 30px;
     cursor: pointer;
     font-family: 'Nanum Pen Script', cursive;
@@ -51,7 +51,7 @@ text-align:center;
     background-color: white;
     display: inline-block;
     border-radius: 10px;
-    font-size: 20   pt;
+    font-size: 20pt;
     text-align: center;
     margin: 3px;
   
@@ -60,7 +60,7 @@ text-align:center;
 {
 display: inline-block;
 background: rgb(0, 225, 255);
-border: solid 5px white;
+border: solid 5px black;
 border-radius: 10px;
 padding: 5px 20px;
 margin: 0 auto;
@@ -79,7 +79,7 @@ display:none;
 }
 .player{
     width: 40%;
-    border: double 5px black;
+    border: solid 5px black;
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
@@ -101,7 +101,7 @@ display:none;
 }
 .deck{ 
     width: 10%;
-    border: double 5px #0f0000;
+    border: solid 5px #0f0000;
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
