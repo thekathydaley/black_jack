@@ -51,7 +51,7 @@ text-align:center;
     background-color: white;
     display: inline-block;
     border-radius: 10px;
-    font-size: 20pt;
+    font-size: 20   pt;
     text-align: center;
     margin: 3px;
   
@@ -79,7 +79,7 @@ display:none;
 }
 .player{
     width: 40%;
-    border: solid 5px black;
+    border: soli 5px black;
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
@@ -101,7 +101,7 @@ display:none;
 }
 .deck{ 
     width: 10%;
-    border: solid 5px #0f0000;
+    border: double 5px #0f0000;
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
